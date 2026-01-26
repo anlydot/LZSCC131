@@ -1,0 +1,14 @@
+	.text
+
+	.globl main
+
+main:
+	addi 	$t0, $zero, 3	# a = 3
+	addi	$t1, $zero, 2	# b = 2
+
+	add 	$t2, $t0, $t1	# c = a + b
+
+	# jr		$ra		# Return to caller
+
+	li	$v0, 11
+	syscall
